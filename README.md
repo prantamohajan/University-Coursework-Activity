@@ -2,6 +2,7 @@
 
 A collection of web development projects built by me while learning and practicing full-stack development.
 
+
 ## Projects
 
 ### 1. Antique {Backend Project}
