@@ -1,0 +1,65 @@
+[
+  {
+    "id": "c2",
+    "name": "Coca-Cola Pepsi 330ml Can",
+    "category": "Cans",
+    "price": 1,
+    "stock": 150,
+    "description": "Zero sugar, full Coca-Cola taste, 330ml can.",
+    "image": "https://images.unsplash.com/photo-1629203851122-3726ecdf080e?w=800&q=80"
+  },
+  {
+    "id": "c3",
+    "name": "Coca-Cola Vintage Cooler",
+    "category": "Merchandise",
+    "price": 65,
+    "stock": 5,
+    "description": "Retro-style Coca-Cola branded cooler, perfect for parties.",
+    "image": "https://images.unsplash.com/photo-1581636625402-29b2a704ef13?w=800&q=80"
+  },
+  {
+    "id": "c4",
+    "name": "Coca-Cola Glass Bottle Set (6 pcs)",
+    "category": "Bottles",
+    "price": 12,
+    "stock": 30,
+    "description": "Classic glass bottle 6-pack, collector favorite.",
+    "image": "https://m.media-amazon.com/images/I/71oSylkADFL._AC_UF894,1000_QL80_.jpg"
+  },
+  {
+    "id": "c5",
+    "name": "Coca-Cola Logo T-Shirt",
+    "category": "Merchandise",
+    "price": 15,
+    "stock": 40,
+    "description": "Cotton t-shirt with the classic Coca-Cola script logo.",
+    "image": "https://m.media-amazon.com/images/I/91EhiTdkwnL._AC_CR662,0,1620,2455_UL1500_.jpg"
+  },
+  {
+    "id": "c6",
+    "name": "Coca-Cola 1L",
+    "category": "Merchandise",
+    "price": 5,
+    "stock": 60,
+    "description": "Set of 4 collectible Coca-Cola fridge magnets.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfxO_FgWF3cJdKaRRGTtYWO9EPTp_8ZktjEhMCv-e7YPD94mjr2PsqBH6M&s=10"
+  },
+  {
+    "id": "0KVw-phw",
+    "name": "wisky",
+    "category": "coke",
+    "price": 25,
+    "stock": 5,
+    "description": "best drink",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrxJkBmIdBPSAjdxBCLmqaOPxSxFIhrWL1iFjTcE52vw&s=10"
+  },
+  {
+    "id": "x90yrNA0",
+    "name": "Fanta",
+    "category": "coke",
+    "price": 2,
+    "stock": 2,
+    "description": "fanta\n\n",
+    "image": "https://www.kroger.com/product/images/xlarge/front/0004900001423"
+  }
+]

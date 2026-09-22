@@ -1,0 +1,58 @@
+:root {
+  --coke-red: #F40009;
+  --coke-dark: #C4000A;
+  --coke-black: #1a1a1a;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fff8f0;
+}
+.navbar { background: var(--coke-red); }
+.navbar-brand { font-size: 1.4rem; color: #fff !important; }
+#viewTabs .nav-link { color: #fff; }
+#viewTabs .nav-link.active { background: #fff; color: var(--coke-red); font-weight: 600; }
+
+.hero {
+  background: linear-gradient(135deg, var(--coke-red), var(--coke-dark));
+  color: #fff;
+  padding: 50px 20px 40px;
+}
+.hero h1 { font-weight: 700; letter-spacing: 1px; }
+
+.btn-coke {
+  background: var(--coke-red);
+  color: #fff;
+  border: none;
+}
+.btn-coke:hover { background: var(--coke-dark); color: #fff; }
+
+.product-card {
+  border: none;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.product-card img { height: 190px; object-fit: cover; }
+.product-card .card-body { display: flex; flex-direction: column; flex: 1; }
+.product-card .price { font-weight: 700; color: var(--coke-red); font-size: 1.2rem; }
+.badge-cat {
+  background: var(--coke-black);
+  color: #fff;
+  font-size: 0.72rem;
+}
+
+.app-toast {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--coke-black);
+  color: #fff;
+  padding: 10px 22px;
+  border-radius: 8px;
+  display: none;
+  z-index: 2000;
+}

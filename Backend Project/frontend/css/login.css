@@ -1,0 +1,32 @@
+.login-body{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:100vh;
+}
+.login-card{
+  background:var(--ivory-raised);
+  border:1px solid var(--gold-line);
+  border-radius:14px;
+  padding:36px 32px;
+  width:100%;
+  max-width:360px;
+  box-shadow:var(--shadow);
+  text-align:center;
+}
+.login-card h1{
+  font-family:'Tiro Bangla', serif;
+  font-weight:400;
+  font-size:2rem;
+  margin:0;
+  color:var(--emerald-deep);
+}
+.login-card .field{
+  text-align:left;
+  margin-bottom:16px;
+}
+.login-hint{
+  margin-top:16px;
+  font-size:0.82rem;
+  color:var(--muted);
+}

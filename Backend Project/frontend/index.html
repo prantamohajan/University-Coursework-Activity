@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>খাতা — পণ্য ব্যবস্থাপনা</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="frame">
+  <div class="frame-inner">
+
+    <header class="top">
+      <div class="crest">খ</div>
+      <div class="heading-block">
+        <h1>খাতা</h1>
+        <p class="tagline">পণ্যের সংগ্রহ, সযত্নে সাজানো</p>
+      </div>
+      <div class="stat">
+        <div class="stat-num" id="totalCount">0</div>
+        <div class="stat-lbl">মোট পণ্য</div>
+      </div>
+      <button class="btn-logout" id="logoutBtn">লগআউট</button>
+    </header>
+
+    <section class="panel form-panel">
+      <h2><span class="rule"></span>নতুন পণ্য যোগ করুন</h2>
+      <div class="form-grid">
+        <div class="field wide">
+          <label for="fName">পণ্যের নাম</label>
+          <input type="text" id="fName" placeholder="যেমন: দার্জিলিং চা — উপহার বক্স">
+        </div>
+        <div class="field">
+          <label for="fCategory">ক্যাটাগরি</label>
+          <input type="text" id="fCategory" placeholder="প্রিমিয়াম">
+        </div>
+        <div class="field">
+          <label for="fPrice">দাম (৳)</label>
+          <input type="number" id="fPrice" placeholder="৯৫০" min="0" step="0.01">
+        </div>
+        <div class="field">
+          <label for="fQty">পরিমাণ</label>
+          <input type="number" id="fQty" placeholder="১২" min="0">
+        </div>
+        <button class="btn-primary" id="addBtn">যোগ করুন</button>
+      </div>
+    </section>
+
+    <section class="panel list-panel">
+      <div class="list-head">
+        <h2><span class="rule"></span>পণ্যের তালিকা</h2>
+        <div class="search-wrap">
+          <input type="text" id="searchBox" placeholder="নাম বা ক্যাটাগরি দিয়ে খুঁজুন">
+        </div>
+      </div>
+
+      <div id="tableWrap">
+        <div class="loading-note">তালিকা লোড হচ্ছে...</div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2><span class="rule"></span>এডমিন ম্যানেজমেন্ট</h2>
+      <div class="admin-form-grid">
+        <div class="field">
+          <label for="aUsername">নতুন ইউজারনেম</label>
+          <input type="text" id="aUsername" placeholder="যেমন: rakib">
+        </div>
+        <div class="field">
+          <label for="aPassword">পাসওয়ার্ড</label>
+          <input type="password" id="aPassword" placeholder="••••••••">
+        </div>
+        <button class="btn-primary" id="addAdminBtn">এডমিন যোগ করুন</button>
+      </div>
+      <div id="adminList">
+        <div class="loading-note">এডমিন তালিকা লোড হচ্ছে...</div>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<div class="modal-backdrop" id="editBackdrop">
+  <div class="modal">
+    <h3>পণ্য হালনাগাদ করুন</h3>
+    <div class="field">
+      <label>পণ্যের নাম</label>
+      <input type="text" id="eName">
+    </div>
+    <div class="field">
+      <label>ক্যাটাগরি</label>
+      <input type="text" id="eCategory">
+    </div>
+    <div class="field">
+      <label>দাম (৳)</label>
+      <input type="number" id="ePrice" min="0" step="0.01">
+    </div>
+    <div class="field">
+      <label>পরিমাণ</label>
+      <input type="number" id="eQty" min="0">
+    </div>
+    <div class="modal-actions">
+      <button class="btn-ghost" id="cancelEdit">বাতিল</button>
+      <button class="btn-primary" id="saveEdit">সংরক্ষণ করুন</button>
+    </div>
+  </div>
+</div>
+
+<!-- লগইন ছাড়া কেউ এই পেজে ঢুকতে না পারে, তাই সবার আগে -->
+<script src="js/authGuard.js"></script>
+<!-- API base + shared fetch helper -->
+<script src="js/api.js"></script>
+<!-- one file per CRUD operation, as requested -->
+<script src="js/create.js"></script>
+<script src="js/read.js"></script>
+<script src="js/update.js"></script>
+<script src="js/delete.js"></script>
+<!-- এডমিন অ্যাকাউন্ট ম্যানেজমেন্ট -->
+<script src="js/adminCreate.js"></script>
+<script src="js/adminRead.js"></script>
+<script src="js/adminDelete.js"></script>
+<!-- wires everything together -->
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+
+[
+  {
+    "id": "p1",
+    "name": "Matte Liquid Lipstick",
+    "category": "Lips",
+    "price": 12,
+    "stock": 40,
+    "description": "Long-lasting matte finish, transfer-proof, available in deep rose.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlwKzGoaCvoZrKbcYooNFheNwoghkMmv4B7jU0cFe4ag&s=10"
+  },
+  {
+    "id": "p2",
+    "name": "Hydrating Foundation SPF 30",
+    "category": "Face",
+    "price": 22,
+    "stock": 25,
+    "description": "Buildable medium coverage with sun protection and a natural dewy finish.",
+    "image": "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=800&q=80"
+  },
+  {
+    "id": "p3",
+    "name": "Rose Gold Highlighter Palette",
+    "category": "Face",
+    "price": 18,
+    "stock": 18,
+    "description": "Silky, buildable highlighter shades for a lit-from-within glow.",
+    "image": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&q=80"
+  },
+  {
+    "id": "p4",
+    "name": "Volumizing Mascara",
+    "category": "Eyes",
+    "price": 14,
+    "stock": 35,
+    "description": "Smudge-proof formula that lifts and volumizes every lash.",
+    "image": "https://images.unsplash.com/photo-1631730359585-38a4935cbec4?w=800&q=80"
+  },
+  {
+    "id": "p5",
+    "name": "Vitamin C Glow Serum",
+    "category": "Skincare",
+    "price": 26,
+    "stock": 30,
+    "description": "Brightening daily serum with vitamin C and hyaluronic acid.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn02L-3rNwXsUt7R0whMn7HMquod61Zr91q2VQq24PRg&s=10"
+  },
+  {
+    "id": "p6",
+    "name": "Nude Eyeshadow Palette",
+    "category": "Eyes",
+    "price": 20,
+    "stock": 22,
+    "description": "12 versatile matte and shimmer shades for everyday looks.",
+    "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTZHniXbj1BiUh58ZSqbU85-0VQEZouX0tXt0tRTGf7P_cfq-nJxAgg5gl-L19yLR6IGeQ-VmBlxd8VMxKSnZAWLhV0RhXIOA45ClRHPnk7bODhYvzkIWzKkD9ry2l8h7XQ5OdBpQ&usqp=CAc"
+  },
+  {
+    "id": "Ar7s7C6I",
+    "name": "serum",
+    "category": "face",
+    "price": 50,
+    "stock": 20,
+    "description": "most of the demand product",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRStmiW_0GZm9oWtodqR3hFyMiQ8wgxAFB96WW2zEJUpA&s=10"
+  },
+  {
+    "id": "ExIRlbUR",
+    "name": "lip oil",
+    "category": "lip",
+    "price": 10,
+    "stock": 50,
+    "description": "best oil",
+    "image": "https://img.drz.lazcdn.com/g/kf/S302bc58ffa084e4082f72c1191dce5e9d.jpg_960x960q80.jpg_.webp"
+  }
+]

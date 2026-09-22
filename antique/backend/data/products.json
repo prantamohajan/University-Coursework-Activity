@@ -1,0 +1,62 @@
+[
+  {
+    "id": "p1",
+    "name": "Brass Ship's Compass",
+    "category": "Nautical",
+    "era": "Circa 1920",
+    "price": 145,
+    "stock": 2,
+    "description": "A weathered brass compass salvaged from a coastal trading vessel, complete with its original gimbal mount and hinged glass lid.",
+    "image": "https://rukmini1.flixcart.com/image/1500/1500/xif0q/compass/w/g/q/handmade-brass-marine-sextant-compass-vintage-style-nautical-original-imahhb7ed3fjcqy4.jpeg?q=70"
+  },
+  {
+    "id": "p2",
+    "name": "Victorian Pocket Watch",
+    "category": "Timepieces",
+    "era": "Circa 1890",
+    "price": 320,
+    "stock": 1,
+    "description": "Hand-engraved silver case pocket watch with a mechanical movement, still keeping time after more than a century.",
+    "image": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&q=80"
+  },
+  {
+    "id": "p3",
+    "name": "Carved Oak Writing Desk",
+    "category": "Furniture",
+    "era": "Circa 1900",
+    "price": 780,
+    "stock": 1,
+    "description": "Solid oak writing desk with hand-carved legs, a leather inlay top, and three original drawers with brass pulls.",
+    "image": "https://images.unsplash.com/photo-1518481612222-68bbe828ecd1?w=800&q=80"
+  },
+  {
+    "id": "p4",
+    "name": "Porcelain Tea Set",
+    "category": "Ceramics",
+    "era": "Circa 1930",
+    "price": 210,
+    "stock": 3,
+    "description": "Hand-painted floral porcelain tea set for four, gilded rims, minor age crazing consistent with the period.",
+    "image": "https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?w=800&q=80"
+  },
+  {
+    "id": "p5",
+    "name": "Iron-Bound Trunk",
+    "category": "Furniture",
+    "era": "Circa 1880",
+    "price": 460,
+    "stock": 1,
+    "description": "Travel trunk reinforced with hand-forged iron banding, original leather straps, and a working lock and key.",
+    "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&q=80"
+  },
+  {
+    "id": "p6",
+    "name": "Gilt Hand Mirror",
+    "category": "Vanity",
+    "era": "Circa 1910",
+    "price": 95,
+    "stock": 4,
+    "description": "Ornate gilt-framed hand mirror with a floral repoussé design and a beveled glass plate.",
+    "image": "https://m.media-amazon.com/images/I/71jo7wXZ7fL._AC_UF894,1000_QL80_.jpg"
+  }
+]

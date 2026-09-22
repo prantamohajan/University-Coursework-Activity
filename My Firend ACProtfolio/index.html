@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Argho Chowdhury — Portfolio</title>
+
+        <!-- SEO Meta Tags -->
+        <meta name="description"
+            content="Portfolio of Argho Chowdhury, a Computer Science student at Premier University interested in Data Science and Web Design.">
+        <meta name="author" content="Argho Chowdhury">
+
+        <!-- Open Graph (Social Sharing Preview) -->
+        <meta property="og:title" content="Argho Chowdhury — Portfolio">
+        <meta property="og:description" content="Computer Science student focused on Data Science and Web Design.">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="img.jpg">
+
+        <!-- Favicon -->
+        <link rel="icon" href="img.jpeg" type="image/jpeg">
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap"
+            rel="stylesheet">
+
+        <!-- Bootstrap Icons (icons only — layout/styling is custom) -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <!-- Background particle canvas (single accent color, whole site) -->
+        <canvas id="bgCanvas" class="bg-canvas" aria-hidden="true"></canvas>
+
+        <!-- Navbar -->
+        <nav id="navbar" class="navbar">
+            <div class="nav-inner">
+                <a class="nav-brand" href="#home">Argho<span class="dot">.</span></a>
+
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false"
+                    aria-controls="navMenu">
+                    <span></span><span></span><span></span>
+                </button>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li><a class="nav-link" href="#home">Home</a></li>
+                    <li><a class="nav-link" href="#about">About</a></li>
+                    <li><a class="nav-link" href="#education">Education</a></li>
+                    <li><a class="nav-link" href="#skills">Skills</a></li>
+                    <li><a class="nav-link" href="#projects">Projects</a></li>
+                    <li><a class="nav-link" href="#contact">Contact</a></li>
+                    <li>
+                        <button id="themeToggle" class="theme-btn" aria-label="Toggle dark mode">
+                            <i class="bi bi-moon-stars-fill"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Hero -->
+        <section id="home" class="hero">
+            <div class="container hero-inner">
+                <div class="hero-text">
+                    <p id="greeting" class="hero-eyebrow"></p>
+                    <h1 class="hero-name">Argho Chowdhury</h1>
+                    <h2 class="hero-role">Computer Science Student</h2>
+
+                    <p class="hero-focus">
+                        Focused on <span id="typing" class="hero-focus-word"></span><span class="hero-cursor">|</span>
+                    </p>
+
+                    <p class="hero-desc">
+                        Third-semester CS student at Premier University, building a foundation in data analysis and
+                        clean, functional web interfaces.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                        <a href="files/cv.pdf" class="btn btn-outline" download>Download CV</a>
+                    </div>
+                </div>
+
+                <div class="hero-photo">
+                    <div class="photo-orbit">
+                        <div class="photo-ring" id="photoRing">
+                            <img src="img.jpeg" class="photo-img" alt="Argho Chowdhury">
+                        </div>
+
+                        <div class="orbit-icons">
+                            <a href="https://github.com/arghochowdhury" class="social-icon orbit-icon orbit-1"
+                                target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                                <i class="bi bi-github"></i>
+                            </a>
+                            <a href="mailto:arghochowdury@gmail.com" class="social-icon orbit-icon orbit-2"
+                                aria-label="Email">
+                                <i class="bi bi-envelope-fill"></i>
+                            </a>
+                            <a href="https://wa.me/8801860760972" class="social-icon orbit-icon orbit-3" target="_blank"
+                                rel="noopener noreferrer" aria-label="WhatsApp">
+                                <i class="bi bi-whatsapp"></i>
+                            </a>
+                            <a href="https://www.facebook.com/argho.chowdhury.397/"
+                                class="social-icon orbit-icon orbit-4" target="_blank" rel="noopener noreferrer"
+                                aria-label="Facebook">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="https://www.instagram.com/argho.chowdhury.397/"
+                                class="social-icon orbit-icon orbit-5" target="_blank" rel="noopener noreferrer"
+                                aria-label="Instagram">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+                <span></span>
+            </a>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-head reveal">
+                    <h2>About</h2>
+                </div>
+
+                <div class="about-grid reveal">
+                    <div class="about-card">
+                        <p class="about-lead">
+                            I'm a Computer Science student with a growing interest in Data Science and Web Design.
+                        </p>
+                        <p class="about-body">
+                            My curiosity about data and problem-solving drives me to explore how raw information turns
+                            into useful insight. Alongside that, I enjoy shaping how things look and feel on the web —
+                            combining analytical thinking with an eye for clean design. Long term, I'm working toward a
+                            career as a Data Scientist.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section id="education" class="education">
+            <div class="container">
+                <div class="section-head reveal">
+                    <h2>Education</h2>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-item reveal">
+                        <span class="timeline-year">2025 — Present</span>
+                        <h3>B.Sc in Computer Science</h3>
+                        <p>Premier University</p>
+                    </div>
+
+                    <div class="timeline-item reveal">
+                        <span class="timeline-year">2021 — 2023</span>
+                        <h3>Higher Secondary Certificate</h3>
+                        <p>Chattogram Bandar College</p>
+                    </div>
+
+                    <div class="timeline-item reveal">
+                        <span class="timeline-year">2015 — 2021</span>
+                        <h3>Secondary School Certificate</h3>
+                        <p>Hazi Mohammod Mohsin Govt. High School</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="skills">
+            <canvas id="skillsCanvas" class="skills-canvas" aria-hidden="true"></canvas>
+
+            <div class="container">
+                <div class="section-head reveal">
+                    <h2>Skills</h2>
+                </div>
+
+                <div class="skills-grid reveal">
+                    <div class="skill-row">
+                        <div class="skill-label"><span>HTML</span><span>95%</span></div>
+                        <div class="skill-track">
+                            <div class="skill-fill" data-width="95"></div>
+                        </div>
+                    </div>
+                    <div class="skill-row">
+                        <div class="skill-label"><span>CSS</span><span>80%</span></div>
+                        <div class="skill-track">
+                            <div class="skill-fill" data-width="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-row">
+                        <div class="skill-label"><span>Bootstrap</span><span>60%</span></div>
+                        <div class="skill-track">
+                            <div class="skill-fill" data-width="60"></div>
+                        </div>
+                    </div>
+                    <div class="skill-row">
+                        <div class="skill-label"><span>JavaScript</span><span>60%</span></div>
+                        <div class="skill-track">
+                            <div class="skill-fill" data-width="60"></div>
+                        </div>
+                    </div>
+                    <div class="skill-row">
+                        <div class="skill-label"><span>C Programming</span><span>85%</span></div>
+                        <div class="skill-track">
+                            <div class="skill-fill" data-width="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-row">
+                        <div class="skill-label"><span>Python</span><span>40%</span></div>
+                        <div class="skill-track">
+                            <div class="skill-fill" data-width="40"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <div class="section-head reveal">
+                    <h2>Projects</h2>
+                </div>
+
+                <div class="project-grid">
+                    <article class="project-card reveal">
+                        <h3>Project One</h3>
+                        <p>A short description of this project goes here. Replace with your own work.</p>
+                        <div class="tag-row">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">Bootstrap</span>
+                        </div>
+                        <a href="#" class="project-link">View project <i class="bi bi-arrow-up-right"></i></a>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <h3>Project Two</h3>
+                        <p>A short description of this project goes here. Replace with your own work.</p>
+                        <div class="tag-row">
+                            <span class="tag">Python</span>
+                            <span class="tag">Data Analysis</span>
+                        </div>
+                        <a href="#" class="project-link">View project <i class="bi bi-arrow-up-right"></i></a>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <h3>Project Three</h3>
+                        <p>A short description of this project goes here. Replace with your own work.</p>
+                        <div class="tag-row">
+                            <span class="tag">C Programming</span>
+                        </div>
+                        <a href="#" class="project-link">View project <i class="bi bi-arrow-up-right"></i></a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-head reveal">
+                    <h2>Contact</h2>
+                </div>
+
+                <div class="contact-grid reveal">
+                    <div class="contact-info">
+                        <p class="contact-lead">Let's build something together.</p>
+                        <p class="contact-sub">Open to collaborations, freelance work, or just a chat about tech.</p>
+
+                        <a href="mailto:arghochowdury@gmail.com" class="contact-row">
+                            <i class="bi bi-envelope-fill"></i>
+                            <span>arghochowdury@gmail.com</span>
+                        </a>
+                        <a href="tel:+8801860760972" class="contact-row">
+                            <i class="bi bi-telephone-fill"></i>
+                            <span>+880 1860-760972</span>
+                        </a>
+                    </div>
+
+                    <form id="contactForm" class="contact-form" novalidate>
+                        <div class="field">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                        </div>
+
+                        <div class="field">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                        </div>
+
+                        <div class="field">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="What would you like to say?"
+                                required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                        <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer class="site-footer">
+            <div class="container footer-inner">
+                <div class="footer-brand">
+                    <a class="nav-brand" href="#home">Argho<span class="dot">.</span></a>
+                    <p class="footer-tag">Computer Science student focused on Data Science and Web Design.</p>
+                </div>
+
+                <nav class="footer-nav" aria-label="Quick navigation">
+                    <h4 class="footer-heading">Quick Navigation</h4>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#education">Education</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+
+                <div class="footer-social">
+                    <h4 class="footer-heading">Contact</h4>
+                    <div class="footer-social-icons">
+                        <a href="https://github.com/arghochowdhury" class="social-icon" target="_blank"
+                            rel="noopener noreferrer" aria-label="GitHub">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a href="mailto:arghochowdury@gmail.com" class="social-icon" aria-label="Email">
+                            <i class="bi bi-envelope-fill"></i>
+                        </a>
+                        <a href="https://wa.me/8801860760972" class="social-icon" target="_blank"
+                            rel="noopener noreferrer" aria-label="WhatsApp">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                        <a href="https://www.facebook.com/argho.chowdhury.397/" class="social-icon" target="_blank"
+                            rel="noopener noreferrer" aria-label="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/argho.chowdhury.397/" class="social-icon" target="_blank"
+                            rel="noopener noreferrer" aria-label="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <p class="footer-copy">© <span id="year"></span> Argho Chowdhury. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <!-- Scroll to Top -->
+        <button id="topBtn" aria-label="Scroll to top"><i class="bi bi-arrow-up"></i></button>
+
+        <script src="script.js"></script>
+
+    </body>
+
+</html>

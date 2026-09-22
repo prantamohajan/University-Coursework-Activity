@@ -1,0 +1,17 @@
+{
+  "name": "antique-store-backend",
+  "version": "1.0.0",
+  "description": "Backend API for an antique products store",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "multer": "^1.4.5-lts.1",
+    "nanoid": "^5.0.7"
+  }
+}
