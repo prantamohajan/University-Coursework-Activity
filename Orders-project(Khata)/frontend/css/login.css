@@ -1,0 +1,32 @@
+.login-body{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:100vh;
+}
+.login-card{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:36px 32px;
+  width:100%;
+  max-width:360px;
+  box-shadow:var(--shadow);
+  text-align:center;
+}
+.login-card h1{
+  font-family:'Baloo Da 2', sans-serif;
+  font-weight:700;
+  font-size:1.7rem;
+  margin:0;
+  color:var(--navy);
+}
+.login-card .field{
+  text-align:left;
+  margin-bottom:16px;
+}
+.login-hint{
+  margin-top:16px;
+  font-size:0.82rem;
+  color:var(--muted);
+}

@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --font-heading: 'Outfit', sans-serif;
+  --font-sans: 'Inter', sans-serif;
+  
+  --color-astra-cyan: #00f0ff;
+  --color-astra-emerald: #00ff88;
+  --color-astra-rose: #ff2a5f;
+  --color-astra-crimson: #ff003c;
+  
+  /* Utilities for glassmorphism */
+  --bg-glass-heavy: rgba(0, 0, 0, 0.6);
+  --bg-glass-light: rgba(255, 255, 255, 0.02);
+  --border-glass: rgba(255, 255, 255, 0.08);
+  --border-glass-subtle: rgba(255, 255, 255, 0.06);
+}
+
+@layer base {
+  :root {
+    background-color: #000000;
+    color: #ffffff;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  /* We use Inter as default sans */
+  * {
+    font-family: var(--font-sans);
+  }
+
+  /* Headings use Outfit */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}

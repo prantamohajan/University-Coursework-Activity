@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>এডমিন লগইন — অর্ডার হাব</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/login.css">
+</head>
+<body class="login-body">
+
+<div class="login-card">
+  <div class="logo-dot" style="margin:0 auto 14px;"></div>
+  <h1>অর্ডার হাব</h1>
+  <p class="tagline" style="text-align:center; margin-bottom:26px;">এডমিন প্যানেলে প্রবেশ করুন</p>
+
+  <div class="field">
+    <label for="lUsername">ইউজারনেম</label>
+    <input type="text" id="lUsername" placeholder="admin" autocomplete="username">
+  </div>
+  <div class="field">
+    <label for="lPassword">পাসওয়ার্ড</label>
+    <input type="password" id="lPassword" placeholder="••••••••" autocomplete="current-password">
+  </div>
+
+  <button class="btn-primary" id="loginBtn" style="width:100%; margin-top:8px;">লগইন করুন</button>
+
+  <p class="login-hint">ডিফল্ট: <b>admin</b> / <b>admin123</b></p>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="js/api.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>

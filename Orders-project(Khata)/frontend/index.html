@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>অর্ডার হাব — অর্ডার ব্যবস্থাপনা</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="top">
+    <div class="brand">
+      <span class="logo-dot"></span>
+      <div>
+        <h1>অর্ডার হাব</h1>
+        <p class="tagline">প্রতিটা অর্ডার, এক নজরে</p>
+      </div>
+    </div>
+    <div class="summary-cards">
+      <div class="summary-card">
+        <div class="s-num" id="totalOrders">0</div>
+        <div class="s-lbl">মোট অর্ডার</div>
+      </div>
+      <div class="summary-card accent">
+        <div class="s-num" id="totalRevenue">৳0</div>
+        <div class="s-lbl">মোট বিক্রি</div>
+      </div>
+      <button class="btn-logout" id="logoutBtn">লগআউট</button>
+    </div>
+  </header>
+
+  <section class="panel form-panel">
+    <h2>নতুন অর্ডার নিন</h2>
+    <div class="form-grid">
+      <div class="field">
+        <label for="fCustomer">গ্রাহকের নাম</label>
+        <input type="text" id="fCustomer" placeholder="যেমন: সাদিয়া আফরিন">
+      </div>
+      <div class="field wide">
+        <label for="fItem">পণ্য</label>
+        <input type="text" id="fItem" placeholder="যেমন: হ্যান্ডমেড জুয়েলারি সেট">
+      </div>
+      <div class="field">
+        <label for="fQty">পরিমাণ</label>
+        <input type="number" id="fQty" placeholder="১" min="1">
+      </div>
+      <div class="field">
+        <label for="fPrice">মোট দাম (৳)</label>
+        <input type="number" id="fPrice" placeholder="১২০০" min="0" step="0.01">
+      </div>
+      <button class="btn-primary" id="addBtn">অর্ডার যোগ করুন</button>
+    </div>
+  </section>
+
+  <section class="panel list-panel">
+    <div class="list-head">
+      <h2>সব অর্ডার</h2>
+      <div class="filters" id="filters">
+        <button class="chip active" data-status="সব">সব</button>
+        <button class="chip" data-status="পেন্ডিং">পেন্ডিং</button>
+        <button class="chip" data-status="শিপড">শিপড</button>
+        <button class="chip" data-status="ডেলিভারড">ডেলিভারড</button>
+        <button class="chip" data-status="বাতিল">বাতিল</button>
+      </div>
+    </div>
+
+    <div id="orderGrid">
+      <div class="loading-note">অর্ডার লোড হচ্ছে...</div>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>এডমিন ম্যানেজমেন্ট</h2>
+    <div class="admin-form-grid">
+      <div class="field">
+        <label for="aUsername">নতুন ইউজারনেম</label>
+        <input type="text" id="aUsername" placeholder="যেমন: rakib">
+      </div>
+      <div class="field">
+        <label for="aPassword">পাসওয়ার্ড</label>
+        <input type="password" id="aPassword" placeholder="••••••••">
+      </div>
+      <button class="btn-primary" id="addAdminBtn">এডমিন যোগ করুন</button>
+    </div>
+    <div id="adminList">
+      <div class="loading-note">এডমিন তালিকা লোড হচ্ছে...</div>
+    </div>
+  </section>
+
+</div>
+
+<div class="toast" id="toast"></div>
+
+<div class="modal-backdrop" id="editBackdrop">
+  <div class="modal">
+    <h3>অর্ডার হালনাগাদ করুন</h3>
+    <div class="field">
+      <label>গ্রাহকের নাম</label>
+      <input type="text" id="eCustomer">
+    </div>
+    <div class="field">
+      <label>পণ্য</label>
+      <input type="text" id="eItem">
+    </div>
+    <div class="field">
+      <label>পরিমাণ</label>
+      <input type="number" id="eQty" min="1">
+    </div>
+    <div class="field">
+      <label>মোট দাম (৳)</label>
+      <input type="number" id="ePrice" min="0" step="0.01">
+    </div>
+    <div class="field">
+      <label>অবস্থা</label>
+      <select id="eStatus">
+        <option>পেন্ডিং</option>
+        <option>শিপড</option>
+        <option>ডেলিভারড</option>
+        <option>বাতিল</option>
+      </select>
+    </div>
+    <div class="modal-actions">
+      <button class="btn-ghost" id="cancelEdit">বাতিল</button>
+      <button class="btn-primary" id="saveEdit">সংরক্ষণ করুন</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/authGuard.js"></script>
+<script src="js/api.js"></script>
+<script src="js/create.js"></script>
+<script src="js/read.js"></script>
+<script src="js/update.js"></script>
+<script src="js/delete.js"></script>
+<script src="js/adminCreate.js"></script>
+<script src="js/adminRead.js"></script>
+<script src="js/adminDelete.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
