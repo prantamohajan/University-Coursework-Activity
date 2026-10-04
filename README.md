@@ -5,20 +5,22 @@ A collection of web development projects built by me while learning and practici
 
 ## Projects
 
+### 1. GPT6 ASTRA
+A simple web interface
 
-### 1. Login Page
+### 2. Login Page
 A standalone login page UI/authentication practice project.
 
-### 2. My Friend ACProtfolio (I build)
+### 3. My Friend ACProtfolio (I build)
 A portfolio website built for a friend.
-
-### 3. My Friend AP Portfolio (I build)
-Another portfolio website built for a friend.
 
 ### 4. My Portfolio (I build)
 My personal portfolio website.
 
-### 5. Simple Login Page
+### 5. My Friend AP Portfolio (I build)
+Another portfolio website built for a friend.
+
+### 6. Simple Login Page
 A simpler version of a login page, built for practice.
 
 ## Author
