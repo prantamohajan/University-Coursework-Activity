@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+          <head>
+                    <meta charset="UTF-8">
+                    <title>PUAIS</title>
+                    <style>
+                              body {
+                                        margin: 0;
+                                        font-family: Georgia, 'Times New Roman', serif;
+                                        background: #fff;
+                              }
+
+                              .topbar {
+                                        background: linear-gradient(to bottom, #cfe8fb, #ffffff);
+                                        padding: 20px 30px;
+                                        text-align: right;
+                                        font-size: 14px;
+                                        color: #111;
+                              }
+
+                              .topbar b {
+                                        font-weight: bold;
+                              }
+
+                              .logo {
+                                        text-align: center;
+                                        font-size: 70px;
+                                        font-weight: bold;
+                                        color: #1a56e8;
+                                        margin-top: 40px;
+                                        font-family: Arial, sans-serif;
+                              }
+
+                              .box {
+                                        border: 1px solid #333;
+                                        width: 420px;
+                                        margin: 50px auto;
+                                        padding: 25px 30px;
+                              }
+
+                              .row {
+                                        display: flex;
+                                        align-items: center;
+                                        margin-bottom: 15px;
+                              }
+
+                              .row label {
+                                        width: 110px;
+                                        font-weight: bold;
+                              }
+
+                              .row span {
+                                        width: 15px;
+                              }
+
+                              .row input {
+                                        flex: 1;
+                                        background: #dfe9fb;
+                                        border: 1px solid #88a0d8;
+                                        padding: 6px;
+                                        font-size: 15px;
+                              }
+
+                              .btnwrap {
+                                        text-align: center;
+                                        margin-top: 10px;
+                              }
+
+                              button {
+                                        background: #333;
+                                        color: #ffe033;
+                                        font-weight: bold;
+                                        border: none;
+                                        padding: 8px 25px;
+                                        font-size: 15px;
+                                        cursor: pointer;
+                              }
+
+                              .err {
+                                        color: red;
+                                        text-align: center;
+                                        font-size: 13px;
+                                        margin-top: 10px;
+                                        display: none;
+                              }
+
+                              .footer {
+                                        text-align: center;
+                                        font-size: 13px;
+                                        margin-top: 60px;
+                                        border-top: 1px solid #bcdcf5;
+                                        padding-top: 10px;
+                              }
+
+                              .footer a {
+                                        color: #c00;
+                                        text-decoration: underline;
+                              }
+                    </style>
+          </head>
+
+          <body>
+                    <div class="topbar"><b>For Faculty of Engineering:</b> Beta Version</div>
+                    <div class="logo">PUAIS</div>
+                    <div class="box">
+                              <div class="row"><label>Student Roll</label><span>:</span><input id="roll" type="text"
+                                                  value=""></div>
+                              <div class="row"><label>Password</label><span>:</span><input id="pass" type="password"
+                                                  value=""></div>
+                              <div class="btnwrap"><button onclick="tryLogin()">Sign In</button></div>
+                              <div class="err" id="err">Invalid Roll or Password</div>
+                    </div>
+                    <div class="footer">
+                              Copyright &copy;2011-2026 <b>Premier University</b>, All Rights Reserved.<br>
+                              <a href="#">Software Section</a> , Department of IT,<b>Premier University</b> (Design
+                              &amp; Develop).
+                    </div>
+
+                    <script>
+                              function tryLogin() {
+                                        var roll = document.getElementById('roll').value.trim();
+                                        var pass = document.getElementById('pass').value.trim();
+                                        if (roll === "0222510005101025" && pass === "241900") {
+                                                  window.location.href = "profile.html";
+                                        } else {
+                                                  document.getElementById('err').style.display = "block";
+                                        }
+                              }
+                    </script>
+          </body>
+
+</html>
